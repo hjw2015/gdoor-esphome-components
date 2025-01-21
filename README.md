@@ -1,9 +1,9 @@
-# esphome-components
+# gdoor esphome-components
 ESPHome-External-Components for GDoor Adapters
 
-[gdoor](components/gdoor/README.md) Basic GDoor component
+[gdoor](components/gdoor/README.md) Basic GDoor component offers text- and binary-sensor and output component.
 
-Find more details and config examples on component README pages.
+Find more details and more specific config examples on component README pages.
 ```commandline
 esphome-components
 ├── components
