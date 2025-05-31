@@ -24,11 +24,11 @@ void GDoorActionSensor::loop() {
         if (current_message.find(busdata) != std::string::npos) {
           ESP_LOGVV(TAG, "Matched busdata: %s", busdata.c_str());
           this->publish_state(true);
-          this->publish_state(false);
           return;
         }
       }
     }
+    this->publish_state(false);
   } else {
     ESP_LOGW(TAG, "Parent component not set!");
   }
