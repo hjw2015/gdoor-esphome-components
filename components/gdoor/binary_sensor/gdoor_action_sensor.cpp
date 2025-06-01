@@ -24,6 +24,8 @@ void GDoorActionSensor::loop() {
         if (current_message.find(busdata) != std::string::npos) {
           ESP_LOGVV(TAG, "Matched busdata: %s", busdata.c_str());
           this->publish_state(true);
+          delay_microseconds_safe(10);
+          this->publish_state(false);
           return;
         }
       }
